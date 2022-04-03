@@ -12,7 +12,7 @@ const port =  4000;
 
 app.listen(port,()=>{
     console.log("Server is running...")
-  const job = schedule.scheduleJob('*/1 * * * *', function(){
+  const job = schedule.scheduleJob('5 21 * * *', function(){
        
        // (B) CONNECT TO DATABASE - CHANGE SETTINGS TO YOUR OWN!
         const db = Mysql.createConnection({
