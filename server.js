@@ -6,11 +6,10 @@ const schedule =  require("node-schedule");
 
 
 const app = Express();
-const port =  4000;
 
 
 
-app.listen(port,()=>{
+app.listen(process.env.PORT || 5000,()=>{
     console.log("Server is running...")
   const job = schedule.scheduleJob('5 21 * * *', function(){
        
